@@ -11,19 +11,104 @@ body {
 :root {
     --main-bg: #1F2937;
     --secondary: #E5E7Eb;
+    --third: #3882F6;
+    --black-text: #1f2937;
+}
+
+
+header {
+    background-color: var(--main-bg);
 }
 
 nav {
     display: flex;
-    background-color: var(--main-bg);
     height: 90px;
     color: var(--secondary);
     justify-content: space-around;
     align-items: center;
     font-size: 18px;
+    flex-wrap: wrap;
 }
 
 nav .nav-list {
     display: flex;
     gap: 15px;
 }
+
+header .main-page {
+    height: 550px;
+    color: var(--secondary);
+}
+
+.main-page .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    margin: 55px auto;
+    /* border: 1px solid salmon; */
+}
+
+.main-page .cta {
+    /* border: 2px solid orangered; */
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 12px;
+    justify-content: center;
+}
+
+.cta h1 {
+    font-size: 48px;
+}
+
+.cta p {
+    font-size: 18px;
+}
+
+.cta .button-cta {
+    width: 155px;
+    font-size: 20px;
+    background-color: var(--third);
+    border-style: none;
+    color: var(--secondary);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.main-page .image {
+    display: flex;
+    color: var(--black-text);
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    background-color: var(--secondary);
+}
+
+.content-title h2 {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.benefit-list {
+    display: flex;
+    margin-top: 50px;
+
+    gap: 52px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefit-list .benefit {
+    width: 220px;
+    height: 200px;
+    border-radius: 6px;
+    border: 5px solid var(--third);
+}
+
+/* @media screen and (max-width:990px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+} */
