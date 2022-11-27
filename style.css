@@ -43,7 +43,7 @@ header .main-page {
 .main-page .wrapper {
     display: flex;
     justify-content: space-between;
-    width: 67%;
+    width: 60%;
     margin: 55px auto;
     /* border: 1px solid salmon; */
 }
@@ -78,12 +78,12 @@ header .main-page {
 
 .main-page .image {
     display: flex;
-    color: var(--black-text);
+    color: var(--secondary);
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 520px;
     height: 300px;
-    background-color: var(--secondary);
+    background-color: rgb(188, 188, 188);
 }
 
 .content-title h2 {
@@ -100,15 +100,83 @@ header .main-page {
     justify-content: center;
 }
 
+.benefit-list .card {
+    text-align: center;
+}
+
+.card p {
+    margin-top: 5px;
+}
+
 .benefit-list .benefit {
     width: 220px;
     height: 200px;
-    border-radius: 6px;
+    border-radius: 10px;
     border: 5px solid var(--third);
 }
 
-/* @media screen and (max-width:990px) {
-    .wrapper {
-        flex-wrap: wrap;
-    }
-} */
+.quote {
+    margin-top: 25px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: var(--main-bg);
+    font-style: italic;
+    background-color: var(--secondary);
+}
+
+.quote .wrapper {
+    width: 50%;
+}
+
+.quote .wrapper .author {
+    margin-top: 15px;
+    text-align: end;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.cta2 {
+    height: 300px;
+
+}
+
+.cta2 .button-cta2 {
+    margin: 5% auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 55%;
+    height: 150px;
+
+    color: var(--secondary);
+    background-color: var(--third);
+}
+
+.button-cta2 h6 {
+    font-size: 20px;
+}
+
+.cta-button .button-cta {
+    width: 125px;
+    font-size: 12px;
+    background-color: var(--third);
+    border-style: none;
+    color: var(--secondary);
+    padding: 8px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+}
+
+footer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    background-color: var(--main-bg);
+}
